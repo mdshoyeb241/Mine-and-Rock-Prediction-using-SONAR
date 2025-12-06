@@ -1,0 +1,37 @@
+2025-05-28 16:57:55,557 - INFO - SonarMineDetector initialized with random_state=42
+2025-05-28 16:57:55,557 - INFO - Loading sonar data from sonarall_data.csv
+2025-05-28 16:57:55,568 - INFO - Successfully loaded data with shape: (208, 61)
+2025-05-28 16:57:55,571 - INFO - Features extracted: 60 features from 208 samples
+2025-05-28 16:57:55,571 - INFO - Label distribution before encoding:
+2025-05-28 16:57:55,573 - INFO -   M: 111 samples (53.4%)
+2025-05-28 16:57:55,573 - INFO -   R: 97 samples (46.6%)
+2025-05-28 16:57:55,573 - INFO - Label encoding mapping:
+2025-05-28 16:57:55,573 - INFO -   'M' -> 0
+2025-05-28 16:57:55,573 - INFO -   'R' -> 1
+2025-05-28 16:57:55,575 - INFO - Feature statistics:
+2025-05-28 16:57:55,575 - INFO -   Min value: 0.0000
+2025-05-28 16:57:55,575 - INFO -   Max value: 1.0000
+2025-05-28 16:57:55,576 - INFO -   Mean value: 0.2813
+2025-05-28 16:57:55,576 - INFO -   Std deviation: 0.2828
+2025-05-28 16:57:55,583 - INFO - Standardizing features...
+2025-05-28 16:57:55,585 - INFO - Feature standardization completed:
+2025-05-28 16:57:55,585 - INFO -   Training set - Mean: 0.0000, Std: 1.0000
+2025-05-28 16:57:55,585 - INFO -   Test set - Mean: 0.0165, Std: 1.0392
+2025-05-28 16:57:55,586 - INFO - Training Random Forest classifier...
+2025-05-28 16:57:55,586 - INFO - Starting hyperparameter optimization...
+2025-05-28 16:57:55,586 - INFO - Fitting grid search (this may take several minutes)...
+2025-05-28 16:59:11,866 - INFO - Hyperparameter optimization completed!
+2025-05-28 16:59:11,866 - INFO - Best parameters: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50}
+2025-05-28 16:59:11,868 - INFO - Best cross-validation F1 score: 0.8459
+2025-05-28 16:59:11,951 - INFO - Model training completed in 0.08 seconds
+2025-05-28 16:59:11,952 - INFO - Out-of-bag score: 0.8494
+2025-05-28 16:59:11,952 - INFO - Model uses 50 trees with 60 features per sample
+2025-05-28 16:59:11,952 - INFO - Evaluating model performance...
+2025-05-28 16:59:12,012 - INFO - Model evaluation completed
+2025-05-28 16:59:12,012 - INFO - Analyzing feature importance...
+2025-05-28 16:59:12,040 - INFO - Saving trained model system...
+2025-05-28 16:59:12,062 - INFO - Model saved successfully:
+2025-05-28 16:59:12,062 - INFO -   Model: trained_models\operational_mine_detector_20250528_165912_model.pkl
+2025-05-28 16:59:12,062 - INFO -   Scaler: trained_models\operational_mine_detector_20250528_165912_scaler.pkl
+2025-05-28 16:59:12,062 - INFO -   Encoder: trained_models\operational_mine_detector_20250528_165912_encoder.pkl
+2025-05-28 16:59:12,062 - INFO -   Metadata: trained_models\operational_mine_detector_20250528_165912_metadata.pkl
