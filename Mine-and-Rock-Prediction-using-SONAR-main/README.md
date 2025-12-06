@@ -38,7 +38,7 @@ This project uses a machine learning model trained on SONAR data to detect wheth
 - **Dataset**: 208 rows, 61 columns(60 features , 1 label)
 ---
 ## 🔧 Installation
-1. Clone the repo: `git clone https://github.com/ayanbeliever/Mine-and-Rock-Prediction-using-SONAR.git`
+1. Clone the repo: `git clone https://github.com/mdshoyeb241/Mine-and-Rock-Prediction-using-SONAR.git`
 3. **Backend Setup**:
    - Navigate: `cd backend`
    - Create a virtual environment: `python -m venv .venv`
