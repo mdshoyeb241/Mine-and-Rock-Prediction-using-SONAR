@@ -469,8 +469,8 @@ function App() {
         )}
       </div>
       <footer className="text-center text-white/70 text-sm mt-8">
-        <p>© 2023 Sonar Detection System. All rights reserved.</p>
-        <p>Developed by Mohammed Ayaan</p>
+        <p>© 2025 Sonar Detection System. All rights reserved.</p>
+        <p>Developed by Md Shoyeb</p>
 
       </footer>
       </div>
